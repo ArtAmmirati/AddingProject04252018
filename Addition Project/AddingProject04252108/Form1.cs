@@ -30,7 +30,7 @@ namespace AddingProject04252108
             try
             {
 
-
+                //Adding to Total
                 if (this.textBox2.Text != "")
                 {
                     this.textBox2.Focus();
@@ -70,7 +70,7 @@ namespace AddingProject04252108
         {
             try
             {
-
+                //Subtracting from the total
 
                 if (this.textBox2.Text != "")
                 {
@@ -101,7 +101,7 @@ namespace AddingProject04252108
         {
             try
             {
-
+                // Multiplying the total
 
                 if (this.textBox2.Text != "")
                 {
@@ -131,7 +131,7 @@ namespace AddingProject04252108
         {
             try
             {
-
+                //deviding the total
 
                 if (this.textBox2.Text != "")
                 {
@@ -162,7 +162,7 @@ namespace AddingProject04252108
             double value = 0;
             try
             {
-                // Don't let the user enter anything but numeric values.
+                // User must enter a Number.
                 if (textBox2.Text.Length > 0 && !double.TryParse(textBox2.Text, out value))
                 {
                     e.Cancel = true;
