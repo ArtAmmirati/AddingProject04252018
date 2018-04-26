@@ -1,0 +1,10 @@
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\bin\Debug\AddingProject04252108.exe.config
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\bin\Debug\AddingProject04252108.exe
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\bin\Debug\AddingProject04252108.pdb
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\obj\Debug\AddingProject04252108.Form1.resources
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\obj\Debug\AddingProject04252108.Properties.Resources.resources
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\obj\Debug\AddingProject04252108.csproj.GenerateResource.Cache
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\obj\Debug\AddingProject04252108.csproj.CoreCompileInputs.cache
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\obj\Debug\AddingProject04252108.exe
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\obj\Debug\AddingProject04252108.pdb
+C:\Users\Cyberadmin\Desktop\AddingProject04252018\Addition Project\AddingProject04252108\obj\Debug\AddingProject04252108.csprojResolveAssemblyReference.cache
