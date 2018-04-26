@@ -22,6 +22,9 @@ namespace AddingProject04252108
             InitializeComponent();
         }
 
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -30,9 +33,11 @@ namespace AddingProject04252108
 
                 if (this.textBox2.Text != "")
                 {
-                    listBox1.Items.Add(this.textBox2.Text);
+                    this.textBox2.Focus();
+                    listBox1.Items.Add("+" + " " + this.textBox2.Text);
                     additionArray[i] = double.Parse(textBox2.Text);
                     total = total + double.Parse(textBox2.Text);
+                    
                     textBox1.Text = total.ToString();
                     this.textBox2.Clear();
                     this.textBox2.Focus();
@@ -59,6 +64,117 @@ namespace AddingProject04252108
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                if (this.textBox2.Text != "")
+                {
+                    this.textBox2.Focus();
+
+                    listBox1.Items.Add("-" + " " + this.textBox2.Text);
+                    additionArray[i] = double.Parse(textBox2.Text);
+                    total = total - double.Parse(textBox2.Text);
+                    textBox1.Text = total.ToString();
+                    this.textBox2.Clear();
+                    this.textBox2.Focus();
+
+                }
+                else
+                {
+                    MessageBox.Show("Please Enter a Number");
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void Multiply_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                if (this.textBox2.Text != "")
+                {
+                    this.textBox2.Focus();
+                    listBox1.Items.Add("X" + " " + this.textBox2.Text);
+                    additionArray[i] = double.Parse(textBox2.Text);
+                    total = total * double.Parse(textBox2.Text);
+                    textBox1.Text = total.ToString();
+                    this.textBox2.Clear();
+                    this.textBox2.Focus();
+
+                }
+                else
+                {
+                    MessageBox.Show("Please Enter a Number");
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                if (this.textBox2.Text != "")
+                {
+                    this.textBox2.Focus();
+                    listBox1.Items.Add("/" + " "+ this.textBox2.Text);
+                    additionArray[i] = double.Parse(textBox2.Text);
+                    total = total / double.Parse(textBox2.Text);
+                    textBox1.Text = total.ToString();
+                    this.textBox2.Clear();
+                    this.textBox2.Focus();
+
+                }
+                else
+                {
+                    MessageBox.Show("Please Enter a Number");
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void textBox2_Validating(object sender, CancelEventArgs e)
+        {
+            double value = 0;
+            try
+            {
+                // Don't let the user enter anything but numeric values.
+                if (textBox2.Text.Length > 0 && !double.TryParse(textBox2.Text, out value))
+                {
+                    e.Cancel = true;
+                    MessageBox.Show("Try Using Numbers.");
+                    this.textBox2.Clear();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Failure is an option");
+            }
         }
     }
 }
